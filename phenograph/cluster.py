@@ -15,7 +15,6 @@ from scipy.sparse.base import spmatrix
 from core import (
     gaussian_kernel,
     parallel_jaccard_kernel,
-    pynn_jaccard_kernel,
     jaccard_kernel,
     find_neighbors,
     neighbor_graph,
