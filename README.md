@@ -5,7 +5,7 @@ This is my BigPhenograph, with pynndescent used to compute k-nn graph instead of
 
 To install PhenoGraph, simply run the setup script:
 
-    pip install git+https://github.com/DoronHav/PhenoGraph.git
+    pip install git+https://github.com/DoronHav/SpeedyPhenoGraph.git
 
 
 Expected use is within a script or interactive kernel running Python `3.x`. Data are expected to be passed as a `numpy.ndarray`. When applicable, the code uses CPU multicore parallelism via `multiprocessing`.
