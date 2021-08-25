@@ -78,14 +78,6 @@ def find_neighbors(data, k=30, metric="minkowski", p=2, method="brute", n_jobs=-
         )
         idx, d = knn_search_index.neighbor_graph
         idx = np.sort(idx, axis = 1)
-    elif method == "full_pynn":
-
-        print("Finding Neighbors with full NNDescent")
-
-        index = pynndescent.NNDescent(data, metric = metric)
-        idx, d = index.query(data, k = k + 1)
-        idx = np.sort(idx, axis = 1)
-
     else:
         raise ValueError("Invalid argument to `method` parameters: {}".format(method))
 
